@@ -199,7 +199,6 @@ GameObject:
   - component: {fileID: 14301876}
   - component: {fileID: 14301880}
   - component: {fileID: 14301881}
-  - component: {fileID: 14301882}
   m_Layer: 0
   m_Name: ado
   m_TagString: Untagged
@@ -314,18 +313,6 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 112
   m_CollisionDetection: 0
---- !u!114 &14301882
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 14301875}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f2601b5a2a74ec74ba5fc5ff05e612f2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1001 &36479349
 PrefabInstance:
   m_ObjectHideFlags: 0

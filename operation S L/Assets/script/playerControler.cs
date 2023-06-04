@@ -18,6 +18,8 @@ public class playerControler : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+         // Front movement
+        GetComponent<Rigidbody>().velocity = new Vector3(4, 0, 0);
         // horizontal movement
         horizontalInput = Input.GetAxis("Horizontal");
         transform.Translate(Vector3.back * Time.deltaTime * speed * horizontalInput);
