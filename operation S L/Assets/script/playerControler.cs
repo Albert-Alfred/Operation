@@ -7,8 +7,8 @@ public class playerControler : MonoBehaviour
 {
     private float speed = 10;
     private float horizontalInput;
-    private float leftBoundray = -7;
-    private float rightBoundray = 7;
+    private float leftBoundray = -4;
+    private float rightBoundray = 4;
     // Start is called before the first frame update
     void Start()
     {
