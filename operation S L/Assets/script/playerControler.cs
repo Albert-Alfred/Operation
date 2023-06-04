@@ -7,6 +7,8 @@ public class playerControler : MonoBehaviour
 {
     private float speed = 10;
     private float horizontalInput;
+    private float leftBoundray = -7;
+    private float rightBoundray = 7;
     // Start is called before the first frame update
     void Start()
     {
@@ -19,5 +21,16 @@ public class playerControler : MonoBehaviour
         // horizontal movement
         horizontalInput = Input.GetAxis("Horizontal");
         transform.Translate(Vector3.back * Time.deltaTime * speed * horizontalInput);
+
+        //boundray
+        if (transform.position.z < leftBoundray)
+        {
+            transform.position = new Vector3(transform.position.x, transform.position.y, leftBoundray);
+        }
+        if (transform.position.z > rightBoundray)
+        {
+            transform.position = new Vector3(transform.position.x, transform.position.y, rightBoundray);
+        }
     }
+
 }
